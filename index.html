@@ -3,20 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
-    <title>Todo</title>
+    <link rel="stylesheet" href="./display.css">
+    <title>Todo-App</title>
 </head>
 <body>
-    <div id="maindiv">
-        <h1 id="h1">Todo-List</h1>
-        <form id="form">
-            <input id="input" type="text" placeholder="Enter todo">
-        </form>
-        <p id="error"></p>
-        <ul id="output">
-
-        </ul>
-    </div>
-    <script type="module" src="./app.js"></script>
+        <div class="todo-app">
+            <h2 id="h2">Todo-List </h2>
+            <div class="row">
+                <form id="form">
+                    <input type="text" id="input-box" placeholder="Enter Todo">
+                    <button onclick="addTask()" id="btn">Add</button>
+                </form>
+            </div>
+            <ul id="list-container">
+                <!-- <li class="checked">Task 1</li>
+                <li>Task 2</li>
+                <li>Task 3</li> -->
+            </ul>
+        </div>
+    <script src="./display.js"></script>
 </body>
 </html>
