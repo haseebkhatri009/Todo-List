@@ -1,0 +1,155 @@
+/* 
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins', sans-serif;
+    box-sizing: border-box;
+} */
+body {
+    background-image: url('https://modern-todo-list.vercel.app/img/bg-mobile-light.jpg'); /* Image URL yahan den */
+    background-size: cover; /* Image ko pura page cover karne ke liye */
+    background-position: center; /* Image ko center me rakhne ke liye */
+    background-repeat: no-repeat; /* Image ko repeat hone se rokne ke liye */
+    height: 100%; /* Full height for body */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+html, body {
+    height: 100%; /* Ensure both html and body have 100% height */
+    margin: 0; /* Remove any default margin */
+    padding: 0; /* Remove any default padding */
+}
+#h2{
+    font-family: cursive;
+    /* background-color: white; */
+    color: white;
+    font-size: 50px;
+    /* text-align: center; */
+    /* background-color: blue;
+    position: relative;
+    bottom: 30px; */
+}
+.todo-app{
+    width: 300px;
+    /* max-width: 540px; */
+    background: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(2px);
+    min-height: 200px;
+    /* background: #fff; */
+    margin: 100px auto 20px;
+    padding: 40px 30px 70px;
+    border-radius: 10px;
+}
+.todo-app h2{
+    color: #002765;
+    display: flex;
+    align-items: center;
+    position: relative;
+    bottom: 65px;
+    left: 20px;
+    /* margin-bottom: 10px; */
+}
+.todo-app h2 img {
+    width: 30px;
+    margin-left: 10px;
+}
+.row form{
+    position: relative;
+    bottom: 80px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #edeef0;
+    padding-left:20px;
+    margin-bottom:25px;
+    border-radius: 10px
+}
+
+input{
+    /* flex: 1; */
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 10px;
+    font-weight: 14px;
+}
+
+button {
+    border: none;
+    outline: none;
+    width: 100px;
+    height: 35px;
+    color: #fff;
+    /* padding:16px 50px; */
+    background: #ff5945;
+    /* font-size: 16px; */
+    cursor: pointer;
+    border-radius: 10px;
+    margin-right: 2px;
+}
+button:hover{
+    background: #eb3a26;
+
+}
+
+ul li {
+    list-style: none;
+    font-size: 17px;
+    padding: 12px 8px 12px 50px;
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+    right: 80px;
+}
+/* ul>li::before {
+    content: ' ';
+    position: absolute;
+    height: 28px;
+    width: 28px;
+    border-radius: 50%;
+    background-image: url(images/unchecked.png);
+    background-size:cover;
+    background-position: center;
+    top: 12px;
+    left: 8px;
+} */
+
+ul li.checked {
+    color: #555;
+    text-decoration: line-through;
+}
+
+ul li.checked::before{
+    /* background-image: url(images/checked.png); */
+}
+
+ul li span {
+    position: absolute;
+    left: 220px;
+    top: 5px;
+    width: 40px;
+    height: 40px;
+    font-size: 22px;
+    color: red;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 0%;
+    width: 85px;
+    height: 34px;
+    margin-left: 20px;
+    font-family: monospace;
+    border: 1px solid;
+}
+
+ul li span:hover{
+    color: white;
+    background: #ff5945;
+
+}
+#list-container{
+    /* border: 1px solid; */
+    position: relative;
+    bottom: 40px;
+}
